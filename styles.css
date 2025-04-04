@@ -317,7 +317,7 @@ body.dark-mode button {
     /* Social Media Icons */
     .social-media {
         flex-direction: row; /* Change to linear layout */
-        justify-content: flex-start; /* Align icons to the left */
+        justify-content: center; /* Center icons on smaller screens */
         gap: 10px; /* Maintain spacing between icons */
     }
 
