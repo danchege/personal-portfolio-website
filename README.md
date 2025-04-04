@@ -1,6 +1,7 @@
 # My Portfolio
 
 This document provides a step-by-step explanation of how the code for this portfolio was written.
+link: https://danchege.github.io/personal-portfolio-website/
 
 ## Step 1: Project Setup
 - Created the project directory structure.
