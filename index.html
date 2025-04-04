@@ -25,6 +25,27 @@
             text-decoration: underline;
             text-align: center;
         }
+        @media (max-width: 768px) {
+            .navigation-tab nav ul {
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            .navigation-tab nav ul li {
+                flex: 0 0 auto;
+                margin-right: 10px;
+            }
+            .navigation-tab nav ul li a {
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 5px;
+            }
+        }
     </style>
 </head>
 <body>
