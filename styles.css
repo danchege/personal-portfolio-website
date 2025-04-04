@@ -216,12 +216,17 @@ body.dark-mode button {
 
 /* Contact Form Styles */
 .contact-form {
-    max-width: 600px;
-    margin: 15px auto;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black; /* Set black background */
+    color: white; /* Set text color to white for contrast */
+    border: none; /* Remove right and left borders */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 15px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add subtle shadow for depth */
+    margin: 20px auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content */
+    max-width: 500px; /* Limit the form width */
 }
 
 .contact-form label {
@@ -233,37 +238,33 @@ body.dark-mode button {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 12px;
-    font-family: Arial, sans-serif;
+    background-color: #333; /* Dark background for inputs */
+    color: white; /* White text for contrast */
+    border: none; /* Remove borders */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Add padding */
+    margin-bottom: 15px; /* Add spacing between fields */
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007acc;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+    outline: none; /* Remove focus outline */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add glow effect on focus */
 }
 
 .contact-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007acc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #007acc; /* Blue button background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .contact-form button:hover {
-    background-color: #005f99;
+    background-color: #005f99; /* Darker blue on hover */
 }
 
 /* Download CV Button Styles */
@@ -315,8 +316,9 @@ body.dark-mode button {
 
     /* Social Media Icons */
     .social-media {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row; /* Change to linear layout */
+        justify-content: flex-start; /* Align icons to the left */
+        gap: 10px; /* Maintain spacing between icons */
     }
 
     .social-media a img {
