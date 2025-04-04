@@ -1,23 +1,20 @@
-/* Ensure sections are hidden by default */
+/* Hide all sections by default */
 section {
     display: none;
-    opacity: 0;
-    visibility: hidden;
-    height: 0; /* Collapse the height to remove empty space */
-    overflow: hidden; /* Prevent content from being visible */
 }
 
-/* Show sections when targeted */
-section:target {
-    display: block;
+/* Add smooth transitions for better user experience */
+section {
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.active {
     opacity: 1;
     visibility: visible;
-    height: auto;
 }
 
-/* Smooth transitions for better user experience */
-section {
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, height 0.5s ease-in-out;
+section:target {
+    display: block;
 }
 
 /* Navigation Bar */
@@ -60,7 +57,6 @@ section {
 #nav a.active {
     background-color: #007acc;
     color: #fff;
-    text-decoration: underline; /* Add underline for better visibility */
 }
 
 #about {
@@ -285,18 +281,6 @@ body.dark-mode button {
 
 .cv-download-btn:hover {
     background-color: rgb(53, 213, 235);
-}
-
-/* Footer Styles */
-footer {
-    position: relative; /* Change from static to relative */
-    bottom: 0; /* Move the footer closer to the bottom of the content */
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: #007acc;
-    color: white;
-    font-size: 14px;
 }
 
 /* Responsive Design for Smaller Screens */

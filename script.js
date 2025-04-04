@@ -64,35 +64,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Function to set the active navigation link
-function setActive(link) {
-    // Remove 'active' class from all navigation links
-    document.querySelectorAll('#nav a').forEach((navLink) => {
-        navLink.classList.remove('active');
-    });
-
-    // Add 'active' class to the clicked link
-    link.classList.add('active');
-}
-
-// Automatically set the active link based on the current section
-window.addEventListener('hashchange', () => {
-    const hash = window.location.hash;
-    const activeLink = document.querySelector(`#nav a[href="${hash}"]`);
-    if (activeLink) {
-        setActive(activeLink);
-    }
-});
-
-// Set the initial active link on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash || '#about';
-    const activeLink = document.querySelector(`#nav a[href="${hash}"]`);
-    if (activeLink) {
-        setActive(activeLink);
-    }
-});
-
 // Typewriter effect for introduction
 const introText = "Hello! I'm Daniel Chege, Welcome to my portfolio!";
 const introElement = document.querySelector('header p');
@@ -172,24 +143,6 @@ document.querySelectorAll('#nav a').forEach(link => {
 
 // Show the first section by default
 document.querySelector('section').style.display = 'block';
-
-// Highlight active navigation link
-const navLinks = document.querySelectorAll('#nav a');
-window.addEventListener('hashchange', () => {
-    const hash = window.location.hash.substring(1);
-    navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href').substring(1) === hash);
-    });
-});
-
-// Set the initial active link on page load
-document.addEventListener('DOMContentLoaded', () => {
-    const hash = window.location.hash.substring(1) || 'about';
-    const activeLink = document.querySelector(`#nav a[href="#${hash}"]`);
-    if (activeLink) {
-        activeLink.classList.add('active');
-    }
-});
 
 // Form validation
 document.querySelector('.contact-form').addEventListener('submit', function (e) {
