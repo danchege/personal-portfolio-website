@@ -1,0 +1,421 @@
+/* Hide all sections by default */
+section {
+    display: none;
+}
+
+/* Add smooth transitions for better user experience */
+section {
+    transition: opacity 0.5s ease-in-out;
+}
+
+section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+section:target {
+    display: block;
+}
+
+/* Navigation Bar */
+#nav {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px;
+    /* background-color: #33ccfa; */ /* Removed background color */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Center the list items vertically */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px; /* Add spacing between navigation items */
+}
+
+#nav li {
+    margin: 0;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center the text inside the links */
+}
+
+/* Highlight active navigation link */
+#nav a.active {
+    background-color: #007acc;
+    color: #fff;
+}
+
+#about {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    max-width: 900px;
+
+    }
+
+
+.justified-text {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 auto;
+    max-width: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex; 
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.skills-list {
+    text-align: left;
+    font-weight: bold;
+    color: aqua;
+}
+
+#education {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+    
+
+#interests {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+  
+}
+
+#projects {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+#contacts {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+  
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap : 20px;
+    flex-wrap: wrap;
+    margin: top;
+    padding: 15px;
+    
+}
+.navigation-tab{
+    display: flex;
+    justify-content: center;
+    gap : 20px;
+    flex-wrap: wrap;
+    margin: top;
+    padding: 15px;
+}
+.video-tag{
+    display: flex;
+    justify-content: center;
+}
+
+/* Scroll animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Removed empty ruleset for body.dark-mode #nav */
+
+body.dark-mode #nav a {
+    color: #f0f0f0;
+}
+
+body.dark-mode button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Loading spinner */
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #007acc;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007acc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005f99;
+}
+
+/* Download CV Button Styles */
+.cv-download-btn {
+    background-color: rgba(26, 230, 245, 0.952);
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Reduced padding to make the button smaller */
+    font-size: 14px; /* Reduced font size */
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: rgb(53, 213, 235);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Navigation */
+    #nav {
+        flex-direction: column; /* Make navigation linear */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+
+    #nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px; /* Add spacing between items */
+    }
+
+    #nav a {
+        width: 100%; /* Make links take full width */
+        text-align: left; /* Align text to the left */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+
+    /* Sections */
+    section {
+        padding: 10px;
+    }
+
+    #about, #skills, #education, #interests, #projects, #contacts {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media a img {
+        width: 30px; /* Reduce icon size */
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 10px;
+        box-shadow: none; /* Remove shadow for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+
+    /* Video */
+    .video-tag video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* General Font Sizes */
+    body {
+        font-size: 14px; /* Reduce base font size */
+    }
+
+    h1, h2, h3 {
+        font-size: 18px; /* Reduce heading font sizes */
+    }
+
+    p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navigation */
+    #nav {
+        padding: 3px; /* Further reduce padding */
+        /* background-color: unset; */ /* Ensure no background color */
+    }
+
+    #nav ul {
+        flex-wrap: wrap; /* Allow items to wrap if they don't fit */
+        gap: 5px; /* Further reduce spacing between items */
+    }
+
+    #nav a {
+        font-size: 12px; /* Further reduce font size */
+        padding: 6px 8px; /* Further reduce padding for links */
+    }
+
+    /* Navigation Tab for Very Small Screens */
+    #nav ul {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    #nav li {
+        margin: 3px 0;
+    }
+
+    #nav a {
+        font-size: 12px; /* Further reduce font size */
+        padding: 6px;
+    }
+
+    /* Social Media Icons */
+    .social-media a img {
+        width: 25px; /* Further reduce icon size */
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px; /* Reduce input and textarea font size */
+    }
+
+    .contact-form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    /* General Font Sizes */
+    body {
+        font-size: 12px; /* Further reduce base font size */
+    }
+
+    h1, h2, h3 {
+        font-size: 16px; /* Further reduce heading font sizes */
+    }
+
+    p {
+        font-size: 12px; /* Further reduce paragraph font size */
+    }
+}
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniel Chege Njenga's Portfolio">
+    <meta name="keywords" content="Daniel Chege, Portfolio, Software Developer, Web Development">
+    <meta name="author" content="Daniel Chege">
+    <link rel="stylesheet" href="styles.css">
+    <title>Daniel Chege Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(5, 5, 5);
+            background-image: url(images/background\ 2.webp);
+            background-size: cover;
+            background-position: center;           
+            font-family: Arial, sans-serif;
+        }
+        p {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            color: rgb(255, 255, 255);
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="video-tag">           
+            <video autoplay muted loop width="1200" height="600">
+                <source src="video/my portfolio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p style="text-align: center"></p>
+    </header>
+    <div class="navigation-tab">
+        <nav id="nav" aria-label="Main Navigation">
+            <ul id="nav-ul">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a Software developer and focused on building innovative, user-friendly solutions.Technology pursues me because I am curious about using software to create meaningful digital outputs. The aspects I like most about Software development include programming, troubleshooting, and advanced learning of new technology frameworks. My strongest pride comes from building effective solutions that enhance usability and web optimization because of my user interface design expertise and attention to web performance. I have stayed active in technology exploration and work together with others to implement creative concepts.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills in Programming Languages</h2>
+            <p>My technical knowledge includes Python, HTML and CSS. I build well-structured web designs that feature beautiful visual appearance and responsive elements using HTML and CSS. My understanding of Python enables me to construct dynamic applications, including automated tasks that manage data effectively. I possess expertise in databases as well as MySQL, which allows me to implement and control database systems for creating powerful applications that scale properly.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education Background</h2>
+            <p>My education at secondary school ended in 2015 where Computer studies became a special subject for me and hence my initial passion in Information technology. I have expanded my skills since then by specializing in web technologies and software development to reach expert competency in tech industries.<br> I pursued a Degree course in Community Health and Development from 2016 to 2020. Although my academic background is in health and development, my passion for technology and innovation has driven me to explore and build a career in Information Technology, blending both fields to create impactful solutions.</p>
+            <button class="cv-download-btn" onclick="downloadCV()">Download my CV</button>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <p>I show tremendous enthusiasm toward technology innovations and my professional focus drives me toward developing websites and softwares that boost productivity. Continued learning remains essential to me alongside my work producing meaningful technology projects for the industry. Creating responsive applications represent my professional satisfaction.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p style="text-align:center">Here are some of the projects I have worked on:</p>
+            <ul style="color: rgb(255, 255, 255); font-weight: bold;">
+                <li><a href=https://github.com/danchege/portfolio.git>Portfolio Website</a>-A personal portfolio website in HTML and CSS.</li>
+            </ul>
+            <p>I am currently working on a web application using HTML, CSS, and JavaScript. The project aims to create an interactive platform for users to buy and sell second-hand items. It's going to be amazing.</p>
+            <P style="text-align: center;">Stay tuned for more exciting projects.</p>
+        </section>
+        <section id="contacts">
+            <h2>Contact Me</h2>
+            <p style="text-align:center">Connect with me on social media or send me a message using the form below.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/dan.chege.njenga" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook" width="40">
+                </a>
+                <a href="https://www.twitter.com/dan.chege" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter" width="40">
+                </a>
+                <a href="https://www.linkedin.com/in/dan-Chege" target="_blank">
+                    <img src="images/linked in.png" alt="LinkedIn" width="40">
+                </a>
+                <a href="https://github.com/danchege" target="_blank">
+                    <img src="images/github.png" alt="GitHub" width="40">
+                </a>
+                <a href="https://www.instagram.com/dan_chege_" target="_blank">
+                    <img src="images/instagram.jpg" alt="Instagram" width="40">
+                </a>
+                <a href="https://wa.me/254713332171" target="_blank">
+                    <img src="images/whatsapp.png" alt="WhatsApp" width="40">
+                </a>
+                <a href="mailto:danychege28@gmail.com">
+                    <img src="images/email.png" alt="Email" width="40">
+                </a>
+            </div>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        </section>
+    </main>
+    <footer style="text-align:center">
+        <p>&copy; 2025 Daniel Chege. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
